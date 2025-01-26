@@ -70,7 +70,7 @@ Running the Project
   2.Open your browser or Postman and test the available API endpoints.
 
 ## API Endpoints
-# Here are some of the main API endpoints:
+ Here are some of the main API endpoints:
 
 POST /signup: Sign up a new user (buyer or vendor).
 POST /login: Login to get a JWT token.
@@ -80,11 +80,12 @@ PUT /products/:id: Update product details (admin and staff).
 DELETE /products/:id: Delete a product (admin only).
 
 ## Database Schema
-# The database schema includes the following tables:
+ The database schema includes the following tables:
 
   - Users: Stores information about users (buyers, vendors, and staff).
   - Products: Stores information about products (including details like name, description, price, etc.).
   - Roles: Stores role-based access control for each user.
 
 The database.sql file contains the full schema to set up the database. To import the schema, run:
+
   mysql -u root -p < database.sql

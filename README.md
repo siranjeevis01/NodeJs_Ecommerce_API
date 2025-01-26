@@ -48,5 +48,43 @@ The e-commerce API provides functionality for different types of users:
 ### Environment Setup
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/your-username/ecommerce-api.git
+
+2.Install dependencies:
+  cd ecommerce-api
+  npm install
+
+3.Set up your .env file to include the necessary configuration:
+  - Create a file named .env in the root directory.
+  - Add the following environment variables:
+      DB_HOST=localhost
+      DB_USER=root
+      DB_PASSWORD=yourpassword
+      DB_NAME=ecommerce
+      JWT_SECRET=yourjwtsecret
+Running the Project
+  1.Start the server:
+    node server.js
+    The server will start running on http://localhost:3000.
+
+  2.Open your browser or Postman and test the available API endpoints.
+
+## API Endpoints
+# Here are some of the main API endpoints:
+
+POST /signup: Sign up a new user (buyer or vendor).
+POST /login: Login to get a JWT token.
+GET /products: Get a list of products (admin, staff, vendors, and users).
+POST /products: Create a new product (admin only).
+PUT /products/:id: Update product details (admin and staff).
+DELETE /products/:id: Delete a product (admin only).
+
+## Database Schema
+# The database schema includes the following tables:
+
+  - Users: Stores information about users (buyers, vendors, and staff).
+  - Products: Stores information about products (including details like name, description, price, etc.).
+  - Roles: Stores role-based access control for each user.
+
+The database.sql file contains the full schema to set up the database. To import the schema, run:
+  mysql -u root -p < database.sql

@@ -48,7 +48,7 @@ The e-commerce API provides functionality for different types of users:
 ### Environment Setup
 
 1. Clone the repository:
-   [git clone https://github.com/your-username/ecommerce-api.git](https://github.com/siranjeevis01/NodeJs_Ecommerce_API.git)
+   [git clone https://github.com/siranjeevis01/NodeJs_Ecommerce_API.git](https://github.com/siranjeevis01/NodeJs_Ecommerce_API.git)
 
 2.Install dependencies:
   cd ecommerce-api
